@@ -7,7 +7,7 @@ Berlatih mengetahui lokasi saat ini, berpindah direktori, dan melihat isi direkt
 ## Alat yang Digunakan
 
 - Komputer atau mesin virtual Debian GNU/Linux 13
-- Terminal Bash dengan akun pengguna biasa
+- Terminal Bash; screenshot hasil praktik yang dilampirkan direkam sebagai `root`.
 
 ## Daftar Perintah
 
@@ -15,16 +15,18 @@ Berlatih mengetahui lokasi saat ini, berpindah direktori, dan melihat isi direkt
 | --- | --- |
 | `pwd` | Menampilkan path direktori kerja saat ini. |
 | `ls` | Menampilkan nama file dan direktori pada lokasi saat ini. |
-| `ls -la` | Menampilkan isi termasuk file tersembunyi, beserta detail dasar. |
+| `ls -lah` | Menampilkan isi termasuk file tersembunyi, beserta detail dan ukuran yang mudah dibaca. |
 | `cd` | Berpindah ke direktori lain; `cd` tanpa argumen kembali ke home directory. |
 | `cd ..` | Berpindah ke direktori induk. |
 | `cd /` | Berpindah ke direktori root. |
 
 ## Langkah Praktik
 
-1. Buka terminal Bash, lalu periksa lokasi awal:
+1. Buka terminal Bash, periksa nama pengguna dan versi Debian, lalu lokasi awal:
 
    ```bash
+   whoami
+   cat /etc/os-release
    pwd
    ```
 
@@ -32,7 +34,7 @@ Berlatih mengetahui lokasi saat ini, berpindah direktori, dan melihat isi direkt
 
    ```bash
    ls
-   ls -la
+   ls -lah
    ```
 
 3. Berpindah ke home directory, lalu periksa lokasinya:
@@ -69,6 +71,20 @@ Berlatih mengetahui lokasi saat ini, berpindah direktori, dan melihat isi direkt
 
 `pwd` membantu memastikan lokasi, `ls` membantu memeriksa isi, sedangkan `cd` digunakan untuk berpindah. Biasakan memeriksa path sebelum melakukan operasi file.
 
+## Hasil Praktik dan Bukti
+
+Pada bukti terminal, `cat /etc/os-release` mengidentifikasi Debian GNU/Linux 13 (trixie), sedangkan `whoami` menampilkan `root`. Perintah `whoami` menunjukkan nama akun efektif yang sedang menjalankan perintah. Karena `root` memiliki hak administratif penuh, gunakan akun biasa untuk latihan sehari-hari dan berhati-hatilah saat menjalankan perintah yang mengubah sistem.
+
+Perintah `pwd` menunjukkan direktori aktif. `cd /` berpindah ke root direktori (`/`), `cd /home` berpindah ke `/home`, dan `cd ~` kembali ke home pengguna, yaitu `/root` pada bukti ini. `ls -lah` menampilkan daftar terperinci, termasuk file tersembunyi, dengan ukuran yang mudah dibaca.
+
+### Informasi Sistem
+
+![Bukti Debian 13, username root, dan navigasi direktori](evidence/01-system-information.png)
+
+### Navigasi Direktori
+
+![Bukti penggunaan pwd, cd, dan ls -lah](evidence/02-directory-navigation.png)
+
 ## Screenshot yang Perlu Diambil
 
-Ambil screenshot terminal setelah menjalankan rangkaian `pwd`, `ls -la`, dan perpindahan ke root lalu kembali ke home. Pastikan perintah dan keluarannya terlihat, kemudian simpan screenshot asli di folder `evidence/` ini.
+Ambil screenshot terminal setelah menjalankan rangkaian `pwd`, `ls -lah`, dan perpindahan ke root lalu kembali ke home. Pastikan perintah dan keluarannya terlihat, kemudian simpan screenshot asli di folder `evidence/` ini.

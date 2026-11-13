@@ -12,7 +12,7 @@ Project ini membantu siswa SMK berlatih menggunakan perintah dasar Linux secara 
 | --- | --- |
 | Sistem operasi | Debian GNU/Linux 13 |
 | Terminal | Bash |
-| Hak akses | Akun pengguna biasa; `sudo` tidak diperlukan untuk praktik ini |
+| Hak akses | Gunakan akun biasa untuk latihan; screenshot Lab 01 dan Lab 02 direkam sebagai `root` (`whoami`) |
 | Perangkat | Komputer atau mesin virtual Debian; Docker tidak digunakan |
 
 Sebelum mulai, buka terminal Bash dan pastikan Anda menggunakan Debian 13. Sebagian keluaran, seperti nama host, tanggal, nama pengguna, dan versi kernel, akan berbeda pada setiap komputer.
@@ -21,8 +21,8 @@ Sebelum mulai, buka terminal Bash dan pastikan Anda menggunakan Debian 13. Sebag
 
 | No. | Materi | Panduan |
 | --- | --- | --- |
-| 1 | Navigasi direktori dengan `pwd`, `cd`, dan `ls` | [Lab 01: Navigasi Direktori](labs/01-directory-navigation/README.md) |
-| 2 | Membuat, menyalin, memindahkan, dan menghapus file atau direktori | [Lab 02: Manajemen File](labs/02-file-management/README.md) |
+| 1 | Navigasi direktori dengan `pwd`, `cd`, dan `ls` | [Lab 01: Navigasi Direktori (panduan dan bukti)](labs/01-directory-navigation/README.md) |
+| 2 | Membuat, menyalin, memindahkan, dan menghapus file atau direktori | [Lab 02: Manajemen File (panduan dan bukti)](labs/02-file-management/README.md) |
 | 3 | Perintah dasar: `whoami`, `hostname`, `date`, `uname`, dan `cat` | [Lab 03: Perintah Linux Dasar](labs/03-basic-linux-command/README.md) |
 | 4 | Melihat dan mengubah permission dengan `ls -l` dan `chmod` | [Lab 04: Permission File](labs/04-file-permissions/README.md) |
 | 5 | Membaca serta menjelaskan keluaran perintah Linux | [Lab 05: Analisis Output](labs/05-command-output-analysis/README.md) |
